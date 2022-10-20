@@ -1,0 +1,39 @@
+p {
+    color: #008272;
+}
+
+pre{
+    color: #9b301c;
+}
+
+*{
+    color: #e8dd21;
+}
+
+/*selector de tipo*/
+
+em{
+    color: #cc0c00;
+}
+
+span{
+    color: #54bc00;
+}
+
+/*selector de clase*/
+
+.titulo{
+    color: #0038a8;
+}
+
+.bl{
+    float:right;
+    background-color: #007fcc;
+    color: #54bc00;
+}
+
+/*selector de ID*/
+
+#selector {
+    color: #54bc00;
+}
