@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(172, 161, 161);
+}
+
+section{
+    width: 10cm;
+    margin-top: -10px;
+    background-color: greenyellow;
+}
+
+aside{
+    width: 10cm;
+    margin-top: -20px;
+    background-color: yellow;
+}
+
+footer{
+    width: 10cm;
+    margin-top: -5;
+    background-color: gray;
+}
+
