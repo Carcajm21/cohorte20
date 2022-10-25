@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Heebo:wght@100;300;500&family=Noto+Sans+Ethiopic:wght@100;200&family=Pacifico&family=Shalimar&display=swap');
+
+h1{
+    font-family: 'Creepster', cursive;
+    font-size: 7rem;
+}
+
+.a1{
+    font-family: 'Pacifico', cursive;;
+}
+
+h2{
+    font-family: 'Shalimar', cursive;;
+    font-size: 2em;
+}
+
+.a2{
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+}
+
+.fa-vr-cardboard{
+    color: blue;
+    font-size: 5cm;
+}
+
+.fa-helmet-battle{
+    color: blueviolet;
+}

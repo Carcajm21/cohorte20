@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500&family=Shalimar&display=swap');
+
+.padre{
+    font-size: 20px;
+}
+
+.parrafo1{
+    font-family: 'Shalimar', cursive;
+    font-weight: 600;
+}
+
+.parrafo2{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+html{
+    font-size: 62.5%;
+}
+.fa-twitter{
+    color: aqua;
+    font-size: x-large;
+}
+
+/*root em/rem
+toma en cuenta el tamaño de fuente fijado por el navegador
+*/
