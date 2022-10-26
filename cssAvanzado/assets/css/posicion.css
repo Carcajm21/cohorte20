@@ -1,0 +1,43 @@
+/*position: static; 
+relative, tiene como base la posicion original del elemento*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padre{
+    border: 3px dashed yellow;
+    height: 800px;
+}
+
+.cuadro{
+    border: 2px solid blue;
+    width: 200px;
+    height: 200px;
+    /*display: inline;*/
+}
+
+.uno{
+    background-color: blue;
+    position: relative; 
+}
+
+/*absolute, retira el elemento del flujo normal
+se mide a partir del navegador*/
+
+.dos{
+    background-color: red;
+    position: absolute;
+    bottom: 100px;
+}
+
+/*sticky, deja un objeto fijo
+debe haber suficiente espacio en su contenido*/
+
+.tres{
+    background-color: green;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
