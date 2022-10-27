@@ -1,61 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/css0.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/css0.css" />
     <title>Bootstrap</title>
-</head>
-<body>
-
-    <h1>Bootstrap es horrendo</h1>
+  </head>
+  <body>
+    <h1>Bootstrap</h1>
     <div class="container">
-
-        <p>Este es un parrafo dentro de un contenedor "container" </p>
-
+      <p>Este es un parrafo dentro de un contenedor "container"</p>
     </div>
 
     <div class="container">
-        <div class="row">
-          <div class="col uno">
-            Columna
-          </div>
-          <div class="col dos">
-            Columna
-          </div>
-          <div class="col tres">
-            Columna
-          </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-              1 of 3
-            </div>
-            <div class="col-6">
-              2 of 3 (wider)
-            </div>
-            <div class="col">
-              3 of 3
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              1 of 3
-            </div>
-            <div class="col-5">
-              2 of 3 (wider)
-            </div>
-            <div class="col">
-              3 of 3
-            </div>
-          </div>
-
+      <div class="row">
+        <div class="col uno">Columna</div>
+        <div class="col dos">Columna</div>
+        <div class="col tres">Columna</div>
       </div>
 
+      <div class="row text-center">
+        <div class="col nuno">1 of 3</div>
+        <div class="col-7 ancho">2 of 3 (wider)</div>
+        <div class="col ntres">3 of 3</div>
+      </div>
+
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">1 of 3</div>
+        <div class="col-md-auto">Variable width content</div>
+        <div class="col col-lg-2">3 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col azz">col</div>
+        <div class="col bzz">col</div>
+        <div class="col czz">col</div>
+        <div class="col dzz">col</div>
+      </div>
+
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+      <button type="button" class="btn btn-secondary btn-lg">
+        Large button
+      </button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="button">
+        Toggle button
+      </button>
+      <a class="btn btn-primary disable" role="button" aria-disabled="true"
+        >Primary Link</a
+      >
+
+      <div id="liveAlertPlaceholder"></div>
+      <button type="button" class="btn btn-primary" id="liveAlertBtn">
+        Show live alert
+      </button>
+
+      <script>
+        const alertPlaceholder = document.getElementById(
+          "liveAlertPlaceholder"
+        );
+
+        const alert = (message, type) => {
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = [
+            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+            `   <div>${message}</div>`,
+            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+            "</div>",
+          ].join("");
+
+          alertPlaceholder.append(wrapper);
+        };
+
+        const alertTrigger = document.getElementById("liveAlertBtn");
+        if (alertTrigger) {
+          alertTrigger.addEventListener("click", () => {
+            alert("Nice, you triggered this alert message!", "success");
+          });
+        }
+      </script>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./bootstrap-5/js/bootstrap.bundle.min.js"></script>
-    
-</body>
+  </body>
 </html>

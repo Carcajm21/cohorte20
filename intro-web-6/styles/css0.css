@@ -1,9 +1,37 @@
 .container{
-    background-color: blueviolet;
+    background-color: bisque;
     margin-top: 20px;
 }
 
 .uno{
     background-color: chartreuse;
+}
+
+.nuno{
+    background-color: crimson;
+}
+
+.ntres{
+    background-color: darkmagenta;
+}
+
+.azz{
+    background-color: deepskyblue;
+    color: aliceblue;
+    border: 3px solid red;
+}
+
+.bzz{
+    color: darkorchid;
+    border: 3px dotted blue;
+}
+
+.czz{
+    background-color: white;
+    color: royalblue;
+}
+
+.dzz{
+    background: linear-gradient(to left, blue, white);
 }
 
