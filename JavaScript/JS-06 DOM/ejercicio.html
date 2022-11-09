@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <h1>Numeros</h1>
+    <form id="numeros">
+        Numero 1 <input type="number" name="numero1" value="7"><br>
+        Numero 2 <input type="number" name="numero2" value="4">
+    </form>
+    <button onclick="sumar()">suma</button>
+    <div id="resultado"></div>
+    <script>
+        function sumar() {
+        let formulario = document.forms["numeros"];
+        let resultado = 0;
+        for (const elemento of formulario) {
+          resultado += Number(elemento.value);
+        }
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+    </script>
+</body>
+</html>

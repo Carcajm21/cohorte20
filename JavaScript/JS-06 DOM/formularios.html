@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- <h1>Datos Personales</h1>
+    <form id="formulario">
+        Nombre <input type="text" name="nombre" value="Leo"><br>
+        Apellido <input type="text" name="apellido" value="Vega">
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button>
+    <div id="valores"></div>
+    <script>
+        function mostrarValores(){
+            let formulario = document.forms["formulario"]
+            let texto = " ";
+            for (let elemento of formulario){
+                texto += elemento.value + "<br/>";
+            }
+            document.getElementById("valores").innerHTML = texto;
+        }
+    </script> -->
+
+    <!-- <h1>Numeros</h1>
+    <form id="formularioSuma">
+        Numero 1 <input type="number" name="numero1" value="7"><br>
+        Numero 2 <input type="number" name="numero2" value="4">
+    </form>
+    <button onclick="suma()">Mostrar</button>
+    <div id="valores"></div>
+    <script>
+        function suma(){
+            let formulario = document.forms['formularioSuma'];
+            let resultado = '';
+            let numero1 = formulario['numero1'];
+            let numero2 = formulario['numero2'];
+            resultado = parseInt(numero1.value) + parseInt(numero2.value);
+            document.getElementById('valores').innerHTML = resultado;
+        }
+    </script> -->
+
+    <!-- //document.write
+
+    <h1>Ejemplo Dom document.write</h1>
+
+        <button oneclick="cambio()">Mostrar</button>
+
+    <script>
+        function cambio() {
+            document.write('Saludos');
+        }
+    </script> -->
+
+    <h1>Dom imagenes</h1>
+
+ <button onclick="cambiar()">cambio</button>
+<br>
+<img id="imagen" src="./FallOut.jpg" alt="jarroNegro">
+
+<script>
+    function cambiar(){
+        
+        document.getElementById('imagen').src = "./Maneskin.jpg";
+
+    }
+</script>
+
+
+</body>
+</html>
